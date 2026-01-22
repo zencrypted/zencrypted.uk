@@ -1,7 +1,7 @@
 <html><head><meta charset="utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" /><meta name="author" content="Maxim Sokhatsky" />
-<title>X509</title>
+<title>Zen Crypted X.509</title>
     <link rel="stylesheet" href="https://n2o.dev/blank.css"/>
     <link rel="stylesheet" href="https://n2o.dev/pro/pro.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -9,16 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
 </head><body><nav>
-    <a href="https://synrc.com/">SYNRC</a>
-    <a href="https://erp.uno/" style="background:#ededed;">X.509</a>
-    <a href="https://n2o.dev/ua/">DEV</a>
-  <div class="dropdown">
-    <a onclick="drop()" class="dropbtn">EN</a>
-    <div id="dropdown" class="dropdown-content">
-      <a href="https://erp.uno/">UA</a>
-      <a href="https://erp.uno/en/">EN</a>
-    </div>
-  </div>
+    <a href="https://x509.chat" style="background:#ededed;">X.509</a>
 </nav><header>
     <a href="https://github.com/zencrypted"><img src="https://openmoji.org/data/color/svg/E248.svg" /></a>
     <h1>X.509</h1>
@@ -28,7 +19,7 @@
         <section>
              <h3>ОГОЛОШЕННЯ</h3>
 
-            <div>CHAT X.509 анонсує формалізовану модель і специфікацію для мультікаст
+            <div>Zen Crypted Chat X.509 анонсує формалізовану модель і специфікацію для мультікаст
                  та юнікаст пабліш-сабскрайб брокерів і їх конфігурацій, а також
                  референсні імплементації для сучасних оптимізованих підприємств
                  на базі телекомунікаційної платформи Ericsson/OTP, які прагнуть
@@ -78,21 +69,20 @@
         <section>
             <h3><a href="https://mail.erp.uno">MAIL</a></h3>
             <div>
-                 <ul><li>MSG</li>
-                     <li>LST</li>
-                     <li>PUB</li>
-                     <li>SUB</li>
+                 <ul><li>AUTH</li>
+                     <li>MESSAGE</li>
                      <li>ACK</li>
-                     <li>CUT</li></ul>
+                     <li>CUT</li>
+                 </ul>
              </div>
         </section>
 
         <section>
             <h3><a href="https://zencrypted.github.io/message/">MESSAGE</a></h3>
             <div>
-                 <ul><li>CONTROL</li>
-                     <li>PEER</li>
-                     <li>GROUP</li></ul>
+                 <ul><li>AUTH</li>
+                     <li>MESSAGE</li>
+                     <li>ACK</li></ul>
              </div>
         </section>
 
@@ -101,6 +91,7 @@
             <div>
                  <ul><li>AUTH</li>
                      <li>MESSAGE</li>
+                     <li>ACK</li>
                      <li>FILE</li>
                      <li>ROSTER</li>
                      <li>HISTORY</li>
@@ -112,18 +103,28 @@
         </section>
 
         <section>
-            <h3><a href="https://skynet64.github.io/emqttd/">BROKER</a></h3>
+            <h3><a href="https://zencrypted.github.io/x509/">X509</a></h3>
             <div>
-                 <ul><li><a href="https://skynet64.github.io/emqttd/man/mosquitto.htm">MOSQUITTO</a></li>
-                     <li><a href="https://skynet64.github.io/emqttd/man/nanomq.htm">NANOMQ</a></li>
-                     <li><a href="https://skynet64.github.io/emqttd/man/emqx.htm">EMQX</a></li>
-                     <li><a href="https://skynet64.github.io/emqttd/man/emq.htm">EMQ</a></li>
-                     <li><a href="https://skynet64.github.io/emqttd/man/mq.htm">MQ</li>
+                 <ul><li>v1</li>
+                     <li>v2</li></ul>
+             </div>
+        </section>
+
+    </article>
+    <article>
+
+        <section>
+            <h3><a href="https://mqtt.erp.uno">MQTT</a></h3>
+            <div>
+                 <ul><li><a href="https://mqtt.erp.uno/emqttd/man/mosquitto.htm">MOSQUITTO</a></li>
+                     <li><a href="https://mqtt.erp.uno/emqttd/man/nanomq.htm">NANOMQ</a></li>
+                     <li><a href="https://mqtt.erp.uno/emqttd/man/emqx.htm">EMQX</a></li>
+                     <li><a href="https://mqtt.erp.uno/emqttd/man/emq.htm">EMQ</a></li>
+                     <li><a href="https://mqtt.erp.uno/emqttd/man/mq.htm">MQ</li>
                  </ul>
              </div>
         </section>
-    </article>
-    <article>
+
         <section>
             <h3><a href="https://bitedits.github.io/skynet/">SKYNET</a></h3>
             <div>
@@ -191,8 +192,7 @@
         <section>
             <h3><a href="https://asn1.n2o.dev">ASN.1</a></h3>
             <div>
-                 <ul><li>BER</li>
-                     <li>DER</li>
+                 <ul><li>DER</li>
                      <li>PER</li>
                  </ul>
              </div>
@@ -215,8 +215,10 @@
         <p>
              <ul><li>• Протокол v0 &mdash; WebSocket (Mail)</li>
                  <li>• Протокол v1 &mdash; UDP (Message)</li>
-                 <li>• Протокол v2 &mdash; TCP (Chat)</li>
+                 <li>• Протокол v2 &mdash; TLS (Chat)</li>
                  <li>• Протокол v3 &mdash; MQTT (Broker)</li>
+                 <li>• Протокол v4 &mdash; MHS/IPMS (Air)</li>
+                 <li>• Протокол v5 &mdash; Skynet32 (Battlefield)</li>
                  </ul></p>
 
                  <p>CHAT X.509 належить до класу мультипрофільних месенжерів, захищених за
