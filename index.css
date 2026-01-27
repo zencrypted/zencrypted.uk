@@ -183,12 +183,12 @@ h2 {
 
 /* CTA Banner */
 .cta-banner {
-    background:linear-gradient(135deg,#1e3a8a,#1e40af);
+    background:linear-gradient(135deg,#5B8FCF,#5BC2E7);
     text-align:center;
     padding:6rem 24px;
     margin:120px 0 0;
 }
-.cta-banner h2 { color:white; margin-bottom:2rem; }
+.cta-banner h2 { color:white; margin-bottom:0; }
 .large-cta {
     font-size:1.25rem;
     padding:16px 48px;
