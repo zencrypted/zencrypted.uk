@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Crypted Backend Developer</title>
+    <link rel="stylesheet" href="index.css?v=5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <style>
+        .vacancy-content { max-width: 800px; margin: 120px auto; padding: 0 24px; }
+        .vacancy-content h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 2rem; text-align: left; }
+        .vacancy-content h2 { font-size: 1.5rem; margin: 2rem 0 1rem; text-align: left; }
+        .vacancy-content p { margin-bottom: 1rem; color: var(--text-sec); }
+        .vacancy-content ul { list-style: disc inside; margin-bottom: 2rem; color: var(--text-sec); }
+        .vacancy-content li { margin-bottom: 0.5rem; }
+        .vacancy-content strong, .vacancy-content b { color: var(--text); }
+    </style>
+</head>
+<body>
+
+<nav class="sticky">
+    <div class="nav-container">
+        <a href="index.html" class="logo">X.509</a>
+        <ul class="nav-links">
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#solutions">Industries</a></li>
+            <li><a href="index.html#standards">Standards</a></li>
+        </ul>
+        <a href="https://asn1.zencrypted.uk/" class="logo">X.680</a>
+    </div>
+</nav>
+
+<main class="vacancy-content">
+    <h1>Zen Crypted Backend Developer</h1>
+    <p><strong>Statement of Work</strong> — Backend Developer (Elixir / Erlang / ASN.1)</p>
+    
+    <p><strong>Project:</strong> Development and enhancement of secure military-grade instant messaging server<br>
+    <strong>Position:</strong> Senior/Middle Backend Developer (Elixir primary, Erlang/OTP understanding required)<br>
+    <strong>Project context:</strong> The company is building a high-security chat platform for defense/government use cases. The backend is based on the open-source CHAT server, which implements a custom ASN.1/DER-encoded protocol over TCP/QUIC with full X.509 CMS envelope encryption, OCSP/LDAP validation, ephemeral messages, and standards compliance (RFC 5280, 5652, 8551, ДСТУ 4145, etc.).</p>
+
+    <h2>Scope of Work (main deliverables):</h2>
+    <p>Deep code audit and refactoring of the existing Elixir/Erlang codebase:</p>
+    <ul>
+        <li>Review ASN.1 modules (priv/v2/CHAT-v2.asn1 + related PKIX/CMS modules)</li>
+        <li>Optimize Mnesia usage for message delivery / persistence</li>
+        <li>Harden crypto operations (crypto / public_key / ssl modules)</li>
+    </ul>
+
+    <h2>Implementation / enhancement of military-specific features:</h2>
+    <ul>
+        <li>Integration of Ukrainian national crypto algorithms (ДСТУ 4145 / ДСТУ 4146 where applicable)</li>
+        <li>Support for post-quantum key exchange primitives (if roadmap includes)</li>
+        <li>Enhanced certificate enrollment flows (CMPv2 / EST / SCEP)</li>
+        <li>Audit logging compliant with defense standards (tamper-evident, exportable)</li>
+        <li>Granular access control and zero-trust message routing</li>
+    </ul>
+
+    <h2>Protocol evolution:</h2>
+    <ul>
+        <li>Extend ASN.1 schema for new message types (e.g., file transfer with large attachments, voice/video signaling stubs, MLS-like group keying if required)</li>
+        <li>Implement QUIC transport improvements (0-RTT, connection migration)</li>
+        <li>Add optional federation support (via XMPP/OMEMO-like bridging or native)</li>
+    </ul>
+
+    <h2>Security hardening &amp; compliance:</h2>
+    <ul>
+        <li>Side-channel resistance improvements</li>
+        <li>FIPS-like mode (or equivalent) for crypto primitives</li>
+        <li>Preparation for external security audit / pentest</li>
+        <li>OCSP stapling, CRL checking, DNSSEC integration</li>
+    </ul>
+
+    <h2>DevOps &amp; release engineering:</h2>
+    <ul>
+        <li>Improve mix release process, Docker / systemd packaging</li>
+        <li>Monitoring / metrics (Prometheus / telemetry)</li>
+        <li>CI/CD pipeline enhancements (tests coverage &gt; 85%)</li>
+    </ul>
+
+    <h2>Required skills &amp; experience (for job/CV screening):</h2>
+    <ul>
+        <li>4+ years commercial experience with Elixir (or strong Erlang/OTP transferable)</li>
+        <li>Deep understanding of Erlang/OTP behaviors, supervision trees, gen_server / gen_statem</li>
+        <li>Experience with cryptography in production (OpenSSL / Erlang :crypto, X.509, CMS/S-MIME, ECDSA / Ed25519 / X25519)</li>
+        <li>Practical work with ASN.1 (encoding/decoding, custom compilers, BER/DER/PER)</li>
+        <li>Familiarity with PKI infrastructure (CA, OCSP, LDAP, CMP/EST)</li>
+        <li>Bonus: experience in defense/military/government projects, QUIC, post-quantum crypto, Mnesia / DETS</li>
+        <li>Understanding of secure protocol design (avoiding common pitfalls like replay / downgrade attacks)</li>
+        <li>English (Upper-Intermediate) + Ukrainian (advantage)</li>
+    </ul>
+
+    <h2>Nice to have:</h2>
+    <ul>
+        <li>Experience with N2O.DEV, ERP.UNO open source stack</li>
+        <li>Knowledge of MLS (Messaging Layer Security) RFC</li>
+    </ul>
+
+    <h2>Estimated engagement &amp; Success criteria:</h2>
+    <ul>
+        <li><strong>Estimated engagement:</strong> Full-time / 6–12 months initial contract with extension option</li>
+        <li><strong>Success criteria:</strong> Stable, auditable server passing internal crypto verification + security review; new features merged into fork/main branch.</li>
+    </ul>
+</main>
+
+<footer>
+    <div class="footer-columns">
+        <div>
+            <h4>X.509</h4>
+            <p>Zen Crypted</p>
+        </div>
+        <div>
+            <h4>Products</h4>
+            <ul>
+                <li><a href="https://zencrypted.github.io/x509.chat/">CHAT X.509</a></li>
+                <li><a href="https://ldap.n2o.dev">DIRECTORY X.500</a></li>
+                <li><a href="https://ca.n2o.dev">AUTHORITY X.509</a></li>
+                <li><a href="https://erp.uno/mail/">MAIL X.420</a></li>
+                <li><a href="https://asn1.zencrypted.uk/">ASN.1 X.680</a></li>
+                <li><a href="https://zcc.zencrypted.uk/">CMS X.894</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Documents</h4>
+            <ul>
+                <li><a href="#">Standards Compliance</a></li>
+                <li><a href="https://zencrypted.github.io/x509.chat/encryption.pdf">Encryption Architecture</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Vacancies</h4>
+            <ul>
+                <li><a href="server.html">Backend Developer</a></li>
+                <li><a href="client.html">Client Developer</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contacts</h4>
+            <p><a href="mailto:x509@zencrypted.uk">x509@zencrypted.uk</a></p>
+            <p>© 2023–2026 Zen Crypted</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

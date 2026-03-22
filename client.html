@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Crypted Client Developer</title>
+    <link rel="stylesheet" href="index.css?v=5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <style>
+        .vacancy-content { max-width: 800px; margin: 120px auto; padding: 0 24px; }
+        .vacancy-content h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 2rem; text-align: left; }
+        .vacancy-content h2 { font-size: 1.5rem; margin: 2rem 0 1rem; text-align: left; }
+        .vacancy-content p { margin-bottom: 1rem; color: var(--text-sec); }
+        .vacancy-content ul { list-style: disc inside; margin-bottom: 2rem; color: var(--text-sec); }
+        .vacancy-content li { margin-bottom: 0.5rem; }
+        .vacancy-content strong, .vacancy-content b { color: var(--text); }
+    </style>
+</head>
+<body>
+
+<nav class="sticky">
+    <div class="nav-container">
+        <a href="index.html" class="logo">X.509</a>
+        <ul class="nav-links">
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#solutions">Industries</a></li>
+            <li><a href="index.html#standards">Standards</a></li>
+        </ul>
+        <a href="https://asn1.zencrypted.uk/" class="logo">X.680</a>
+    </div>
+</nav>
+
+<main class="vacancy-content">
+    <h1>Zen Crypted Client Developer</h1>
+    <p><strong>Statement of Work</strong> — Client Developer (Swift / iOS / ASN.1)</p>
+    
+    <p><strong>Project:</strong> Development and enhancement of secure military-grade iOS chat client<br>
+    <strong>Position:</strong> iOS Developer (Swift, security-focused)<br>
+    <strong>Project context:</strong> The client is based on the open-source Chat X.509 for iOS, a server-less proof-of-concept using multicast UDP + X.509 certs for local encrypted messaging. The goal is to evolve it into a full client for the custom Elixir server (TCP/QUIC + ASN.1/DER protocol), with end-to-end X.509 CMS encryption and military-grade security.</p>
+
+    <h2>Scope of Work (main deliverables):</h2>
+    <p>Migration &amp; refactoring from multicast UDP to client-server model:</p>
+    <ul>
+        <li>Replace UDP multicast with TCP/QUIC transport</li>
+        <li>Implement full ASN.1/DER parser &amp; serializer (using existing CHAT.asn1 schema)</li>
+        <li>Integrate with backend protocol (AUTH, PRESENCE, MESSAGE, ROSTER, PROFILE, etc.)</li>
+    </ul>
+
+    <h2>Cryptographic core implementation:</h2>
+    <ul>
+        <li>X.509 certificate handling (import, validation, chain building, OCSP stapling)</li>
+        <li>CMS envelope encrypt/decrypt + sign/verify for every message</li>
+        <li>Key management (private key in Secure Enclave, biometric protection)</li>
+        <li>Support for ДСТУ national algorithms if required by client</li>
+    </ul>
+
+    <h2>UI/UX for military use case:</h2>
+    <ul>
+        <li>Secure chat interface (threads, roster, presence, read receipts)</li>
+        <li>Offline message queue + synchronization</li>
+        <li>Minimalist, high-contrast UI suitable for field/gloved use</li>
+        <li>Ephemeral / self-destructing messages support</li>
+    </ul>
+
+    <h2>Security &amp; hardening:</h2>
+    <ul>
+        <li>App Transport Security (ATS) compliance + custom pinning</li>
+        <li>Jailbreak / debugger detection</li>
+        <li>Data protection (NSFileProtectionCompleteUnlessOpen)</li>
+        <li>Secure local storage (Keychain + encrypted SQLite / DataProtection)</li>
+    </ul>
+
+    <h2>Testing &amp; release:</h2>
+    <ul>
+        <li>Unit tests for crypto &amp; ASN.1 logic (&gt; 80% coverage)</li>
+        <li>Integration tests with backend server</li>
+        <li>Prepare for TestFlight / enterprise distribution</li>
+        <li>Documentation for crypto verification / licensing needs</li>
+    </ul>
+
+    <h2>Required skills &amp; experience (for job/CV screening):</h2>
+    <ul>
+        <li>4+ years commercial iOS development (Swift 5+)</li>
+        <li>Strong experience with Security framework, CommonCrypto, CryptoKit</li>
+        <li>Practical work with X.509 certificates, ASN.1 parsing (e.g. via Swift-ASN.1 or custom)</li>
+        <li>Understanding of end-to-end encryption protocols (Signal-like, CMS/S-MIME)</li>
+        <li>Experience with networking (URLSession, NWConnection, QUIC if possible)</li>
+        <li>Familiarity with Secure Enclave, biometric auth (Face ID / Touch ID)</li>
+        <li>English (Upper-Intermediate) + Ukrainian (advantage)</li>
+    </ul>
+
+    <h2>Nice to have:</h2>
+    <ul>
+        <li>Experience with military/government/defense apps (secure comms, STIG compliance)</li>
+        <li>Background in cryptography / PKI on mobile</li>
+        <li>Previous work with multicast UDP or local-network protocols</li>
+        <li>Knowledge of Swift Package Manager for crypto libs</li>
+    </ul>
+
+    <h2>Estimated engagement &amp; Success criteria:</h2>
+    <ul>
+        <li><strong>Estimated engagement:</strong> Full-time / 6–12 months initial contract with extension option</li>
+        <li><strong>Success criteria:</strong> Fully functional iOS client connecting to the custom server, passing end-to-end encryption verification, ready for security audit / field testing.</li>
+    </ul>
+</main>
+
+<footer>
+    <div class="footer-columns">
+        <div>
+            <h4>X.509</h4>
+            <p>Zen Crypted</p>
+        </div>
+        <div>
+            <h4>Products</h4>
+            <ul>
+                <li><a href="https://zencrypted.github.io/x509.chat/">CHAT X.509</a></li>
+                <li><a href="https://ldap.n2o.dev">DIRECTORY X.500</a></li>
+                <li><a href="https://ca.n2o.dev">AUTHORITY X.509</a></li>
+                <li><a href="https://erp.uno/mail/">MAIL X.420</a></li>
+                <li><a href="https://asn1.zencrypted.uk/">ASN.1 X.680</a></li>
+                <li><a href="https://zcc.zencrypted.uk/">CMS X.894</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Documents</h4>
+            <ul>
+                <li><a href="#">Standards Compliance</a></li>
+                <li><a href="https://zencrypted.github.io/x509.chat/encryption.pdf">Encryption Architecture</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Vacancies</h4>
+            <ul>
+                <li><a href="server.html">Backend Developer</a></li>
+                <li><a href="client.html">Client Developer</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contacts</h4>
+            <p><a href="mailto:x509@zencrypted.uk">x509@zencrypted.uk</a></p>
+            <p>© 2023–2026 Zen Crypted</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
