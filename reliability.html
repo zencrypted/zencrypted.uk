@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Crypted Service Reliability Engineer</title>
+    <link rel="stylesheet" href="index.css?v=5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <style>
+        .vacancy-content { max-width: 800px; margin: 120px auto; padding: 0 24px; }
+        .vacancy-content h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 2rem; text-align: left; }
+        .vacancy-content h2 { font-size: 1.5rem; margin: 2rem 0 1rem; text-align: left; }
+        .vacancy-content p { margin-bottom: 1rem; color: var(--text-sec); }
+        .vacancy-content ul { list-style: disc inside; margin-bottom: 2rem; color: var(--text-sec); }
+        .vacancy-content li { margin-bottom: 0.5rem; }
+        .vacancy-content strong, .vacancy-content b { color: var(--text); }
+    </style>
+</head>
+<body>
+<nav class="sticky">
+    <div class="nav-container">
+        <a href="index.html" class="logo">X.509</a>
+        <ul class="nav-links">
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#solutions">Industries</a></li>
+            <li><a href="index.html#standards">Standards</a></li>
+        </ul>
+    </div>
+</nav>
+<main class="vacancy-content">
+    <h1>Zen Crypted Reliability Engineer</h1>
+    <p><strong>Statement of Work</strong> — Service Reliability Engineer (SRE)</p>
+    <p><strong>Project:</strong> Ensuring 24/7 availability, resilience and operational excellence of the secure military-grade instant messaging platform<br>
+    <strong>Position:</strong> Senior Service Reliability Engineer (SRE)<br>
+    <strong>Project context:</strong> Zen Crypted is building x509.chat — a defense/government-grade secure communications ecosystem. The platform is powered by a custom ASN.1/DER-encoded protocol over TCP/QUIC with X.509 CMS envelope encryption, full PKI validation, ephemeral messaging and strict compliance with RFC 5280, 5652, 8551, ДСТУ 4145 and other military standards. The backend is implemented in Elixir/Erlang/OTP with Mnesia persistence. The SRE role is critical for keeping this high-stakes system running at extreme reliability levels required by defense and government customers.</p>
+
+    <h2>Scope of Work (main deliverables):</h2>
+
+    <h2>Monitoring, Observability &amp; Alerting:</h2>
+    <ul>
+        <li>Design and implement comprehensive observability stack (Prometheus + Telemetry + Grafana + OpenTelemetry) for the Elixir/Erlang backend and QUIC transport layer</li>
+        <li>Build custom metrics, traces and logs for ASN.1 protocol events, crypto operations, message delivery latency and PKI validation flows</li>
+        <li>Establish SLOs/SLIs/SLAs tailored to military-grade requirements (99.99%+ uptime, sub-second delivery, zero-downtime certificate rotation)</li>
+        <li>Create intelligent alerting and on-call escalation workflows with PagerDuty-style rotation</li>
+    </ul>
+
+    <h2>Reliability Engineering &amp; Chaos Resilience:</h2>
+    <ul>
+        <li>Implement automated chaos engineering and failure-injection testing for critical paths (network partitions, crypto module failures, Mnesia overload, QUIC connection drops)</li>
+        <li>Develop automated remediation playbooks and self-healing mechanisms (supervision tree tuning, circuit breakers, rate limiting)</li>
+        <li>Capacity planning and horizontal scaling strategies for high-load defense scenarios</li>
+        <li>Post-incident reviews (blameless post-mortems) and reliability improvement backlog</li>
+    </ul>
+
+    <h2>Infrastructure &amp; Release Reliability:</h2>
+    <ul>
+        <li>Own and harden CI/CD pipelines, mix release process, Docker/systemd packaging and zero-downtime deployment strategies</li>
+        <li>Infrastructure-as-Code and GitOps practices for all production environments</li>
+        <li>Secure distribution and secret management compliant with defense standards</li>
+        <li>Performance benchmarking and load testing under realistic military network conditions</li>
+    </ul>
+
+    <h2>Security Operations &amp; Compliance:</h2>
+    <ul>
+        <li>Integrate security telemetry with crypto audit logs and OCSP/CRL monitoring</li>
+        <li>Support external security audits, pentests and compliance certifications</li>
+        <li>Maintain FIPS-like operational mode and side-channel resistance at infrastructure level</li>
+        <li>Disaster recovery and business continuity planning for classified environments</li>
+    </ul>
+
+    <h2>Collaboration &amp; Knowledge Transfer:</h2>
+    <ul>
+        <li>Work closely with Backend Engineers and the Product Architect to embed reliability practices into design and code reviews</li>
+        <li>Document runbooks, operational procedures and reliability architecture</li>
+        <li>Train the team on SRE principles and golden signals</li>
+    </ul>
+
+    <h2>Required skills &amp; experience (for job/CV screening):</h2>
+    <ul>
+        <li>5+ years of commercial SRE or DevOps experience in high-availability, security-critical systems</li>
+        <li>Strong production experience with Elixir/Erlang/OTP (BEAM VM tuning, Mnesia/DETS, supervision trees, Telemetry)</li>
+        <li>Deep hands-on knowledge of observability tools (Prometheus, Grafana, OpenTelemetry, ELK or equivalent)</li>
+        <li>Practical experience with QUIC, TCP networking, Docker, CI/CD and infrastructure automation</li>
+        <li>Understanding of cryptography in production (X.509, CMS, OCSP, PKI) and secure protocol operations</li>
+        <li>Experience in defense, government or high-security environments (zero-trust, audit logging, compliance with RFCs / ДСТУ)</li>
+        <li>Proficiency in Linux systems, networking and performance analysis</li>
+        <li>English (Upper-Intermediate) + Ukrainian (advantage)</li>
+        <li>Master’s degree or higher in Computer Science, Mathematics or related field</li>
+    </ul>
+
+    <h2>Nice to have:</h2>
+    <ul>
+        <li>Familiarity with the N2O.DEV / ERP.UNO open-source stack</li>
+        <li>Experience with post-quantum cryptography operations or MLS (Messaging Layer Security)</li>
+        <li>Background in formal verification or high-assurance systems</li>
+        <li>Previous work on military-grade chat/messaging platforms</li>
+    </ul>
+
+    <h2>Estimated engagement &amp; Success criteria:</h2>
+    <ul>
+        <li><strong>Estimated engagement:</strong> Full-time / 6–12 months initial contract with extension option</li>
+        <li><strong>Success criteria:</strong>
+            <ul>
+                <li>Defined and met SLOs with &lt;0.01% error budget burn</li>
+                <li>Zero unplanned downtime during security audits and field trials</li>
+                <li>Automated on-call response time &lt;15 minutes and MTTR &lt;30 minutes</li>
+                <li>Comprehensive observability coverage and living reliability documentation</li>
+                <li>Successful hand-off of production operations to internal team</li>
+            </ul>
+        </li>
+    </ul>
+</main>
+<footer>
+    <div class="footer-columns">
+        <div>
+            <h4>X.509</h4>
+            <p>Zen Crypted</p>
+        </div>
+        <div>
+            <h4>Products</h4>
+            <ul>
+                    <li><a href="https://zencrypted.github.io/x509.chat/index.en.html">CHAT X.509</a></li>
+                    <li><a href="https://erp.uno/ldap/index.en.html">DIRECTORY X.500</a></li>
+                    <li><a href="https://erp.uno/ca/index.en.html">AUTHORITY X.509</a></li>
+                    <li><a href="https://erp.uno/mail/index.en.html">MAIL X.420</a></li>
+                    <li><a href="https://asn1.zencrypted.uk/">ASN.1 X.680</a></li>
+                    <li><a href="https://zcc.zencrypted.uk/">CMS X.894</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Documents</h4>
+            <ul>
+                <li><a href="https://zencrypted.github.io/x509.chat/bdfl.pdf">BDFL Cathedral</a></li>
+                <li><a href="https://zencrypted.github.io/x509.chat/encryption.pdf">Encryption Architecture</a></li>
+                <li><a href="https://smp.n2o.dev">Sokhatsky Messenger</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Vacancies</h4>
+            <ul>
+                <li><a href="architect.html">Architect</a></li>
+                <li><a href="server.html">Backend Engineer</a></li>
+                <li><a href="reliability.html">Reliability Engineer</a></li>
+                <li><a href="client.html">Client Engineer</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contacts</h4>
+            <p><a href="mailto:x509@zencrypted.uk">x509@zencrypted.uk</a></p>
+            <p>© 2023–2026 Zen Crypted</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
