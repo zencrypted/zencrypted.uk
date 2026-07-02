@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Crypted Machine Learning Engineer</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 980px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #f8f9fa; color: #212529; }
+        h1, h2, h3 { color: #0d6efd; }
+        h1 { border-bottom: 3px solid #0d6efd; padding-bottom: 10px; }
+        pre, code { background: #f1f3f5; padding: 15px; border-radius: 6px; overflow-x: auto; }
+        ul { padding-left: 20px; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>ERP/1: Істотність</h1>
+    <h2>Statement of Work — AI Cognitive Platform</h2>
+</div>
+
+<div class="section">
+    <h3>Project</h3>
+    <p><strong>Розробка та впровадження локальної інтелектуальної платформи</strong> «ERP/1: Істотність» — когнітивної системи аналізу, семантичного пошуку та оцінки істотності інформації в документах та реєстрах.</p>
+    
+    <h3>Position / Deliverable</h3>
+    <p><strong>Повний цикл реалізації AI-модуля</strong> для екосистеми ERP/1 (локальний inference LLM + RAG + інтеграція з ERP/1).</p>
+    
+    <h3>Project Context</h3>
+    <p>ERP/1: Істотність — це повністю локальна (on-premises / air-gapped) інфраструктура когнітивних сервісів, розгорнута в захищеному контурі підприємства. Платформа забезпечує виконання квантованих великих мовних моделей (LLM), семантичний пошук та оцінку значущості інформації без передачі даних у зовнішні хмари. Основна мета — максимальна конфіденційність, відповідність державним стандартам безпеки України та висока економічна ефективність.</p>
+</div>
+
+<div class="section">
+    <h3>Scope of Work (Main Deliverables)</h3>
+    
+    <h4>1. Локальний Inference та Модельний Шар</h4>
+    <ul>
+        <li>Розгортання та оптимізація Llama-3 (8B) та Phi-3 моделей з квантуванням (4-bit / 8-bit) на NVIDIA GeForce RTX 4070 Ti та подібних GPU.</li>
+        <li>Підтримка fallback на CPU (AVX-512 / AMX) при збоях GPU.</li>
+        <li>Автоматичне керування VRAM, temperature, context window та inference-параметрами.</li>
+        <li>Інтеграція з Ollama / vLLM / HuggingFace Transformers в Kubernetes.</li>
+    </ul>
+    
+    <h4>2. Семантичний RAG-контур</h4>
+    <ul>
+        <li>Побудова векторної бази на базі FAISS + RocksDB для документів і реєстрів ERP/1.</li>
+        <li>Автоматична індексація модулів «Документи», «Реєстри» та «Процеси».</li>
+        <li>Реалізація Retrieval-Augmented Generation з ре-ранкінгом для мінімізації галюцинацій.</li>
+        <li>Автоматична знеособлення даних (NER-фільтрація ПД) перед передачею в LLM.</li>
+    </ul>
+    
+    <h4>3. Оркестрація та Відмовостійкість</h4>
+    <ul>
+        <li>Повна GitOps-оркестрація через Kubernetes (Rancher) для 600+ вузлів.</li>
+        <li>Автоматичний failover GPU → CPU та балансування навантаження.</li>
+        <li>Self-healing інференс-контейнерів та rolling updates.</li>
+        <li>Моніторинг Prometheus + Grafana (температура, VRAM, latency, throughput).</li>
+    </ul>
+    
+    <h4>4. Інтеграція з Екосистемою ERP/1</h4>
+    <ul>
+        <li>Захищений Erlang RPC / N2O integration з основними модулями ERP/1.</li>
+        <li>API для семантичного пошуку, summarization, classification та оцінки істотності.</li>
+        <li>Аудит логів усіх AI-запитів з tamper-evident записами.</li>
+    </ul>
+    
+    <h4>5. Безпека та Compliance</h4>
+    <ul>
+        <li>Повна відповідність КСЗІ України, NIST SP 800-53 та NIST AI 600-1.</li>
+        <li>Air-gapped режим роботи без доступу до інтернету.</li>
+        <li>Шифрування даних у спокої та в транзиті.</li>
+        <li>Підготовка до зовнішнього аудиту безпеки.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h3>Technical Stack</h3>
+    <ul>
+        <li><strong>GPU:</strong> NVIDIA RTX 4070 Ti (та подібні consumer/prosumer)</li>
+        <li><strong>Orchestration:</strong> Kubernetes, Rancher, GitOps (Flux/ArgoCD)</li>
+        <li><strong>Models:</strong> Llama-3 8B, Phi-3, квантування GGUF / AWQ</li>
+        <li><strong>Vector DB:</strong> FAISS + RocksDB</li>
+        <li><strong>Backend:</strong> Erlang/Elixir ecosystem (N2O.DEV / ERP.UNO)</li>
+        <li><strong>Monitoring:</strong> Prometheus, Grafana, OpenTelemetry</li>
+        <li><strong>Security:</strong> K8s Network Policies, Pod Security, encrypted storage</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h3>Required Expertise</h3>
+    <ul>
+        <li>Досвід розгортання локальних LLM на consumer-grade GPU в production.</li>
+        <li>Глибокі знання RAG-патернів, векторних баз та retrieval systems.</li>
+        <li>Практичний досвід Kubernetes + GitOps у захищених середовищах.</li>
+        <li>Розуміння вимог КСЗІ, NIST AI та data privacy в державному секторі.</li>
+        <li>Досвід роботи з Erlang/Elixir та екосистемою ERP.UNO / N2O.DEV (перевага).</li>
+        <li>Английська (Upper-Intermediate) + Українська.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h3>Estimated Engagement & Success Criteria</h3>
+    <ul>
+        <li><strong>Термін:</strong> 6–12 місяців (з можливістю продовження на підтримку та масштабування)</li>
+        <li><strong>Success Criteria:</strong>
+            <ul>
+                <li>Стабільний inference з latency &lt; 2s для типових запитів</li>
+                <li>RAG-Triad метрики > 0.92 (Answer Relevance, Context Relevance, Groundedness)</li>
+                <li>99.9%+ uptime AI-сервісів у production кластері</li>
+                <li>Повна інтеграція з ERP/1 модулями «Документи», «Реєстри», «Процеси»</li>
+                <li>Успішне проходження внутрішнього та зовнішнього security/compliance аудиту</li>
+                <li>Документовані runbooks та handover внутрішній команді</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<p style="text-align: center; margin-top: 40px; color: #666;">
+    <strong>ERP/1: Істотність</strong> — Локальний. Безпечний. Розумний.<br>
+    Повна конфіденційність даних підприємства.
+</p>
+
+</body>
+</html>
